@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Testando docker sem login e token...
+      - docker login --username $DOCKERHUB_USERNAME --password $DOCKERHUB_TOKEN
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
