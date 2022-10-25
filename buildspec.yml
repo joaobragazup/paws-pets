@@ -26,3 +26,4 @@ artifacts:
     - 'target/*.jar'
     - 'appspec.yml'
     - 'scripts/**/*'
+    - 'paws-pets.tar.gz'
