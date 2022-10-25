@@ -2,4 +2,4 @@
 
 set -e
 
-docker rm -f paws-pets || true
+docker rm -f paws-pets-joao-braga || true

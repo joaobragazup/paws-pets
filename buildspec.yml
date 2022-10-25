@@ -26,4 +26,4 @@ artifacts:
     - 'target/*.jar'
     - 'appspec.yml'
     - 'scripts/**/*'
-    - 'paws-pets.tar.gz'
+    - 'paws-pets-joao-braga.tar.gz'

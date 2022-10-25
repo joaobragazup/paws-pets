@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: paws-pets.tar.gz
+  - source: paws-pets-joao-braga.tar.gz
     destination: /tmp
 hooks:
   ApplicationStop:
