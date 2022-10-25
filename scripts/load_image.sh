@@ -2,4 +2,4 @@
 
 set -e
 
-docker load -i paws-pets.tar.gz
+docker load -i /tmp/paws-pets.tar.gz

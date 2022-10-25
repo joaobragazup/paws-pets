@@ -13,14 +13,14 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - mvn install
-      - docker build -t paws-pets-joao-braga .
+      - docker build -t paws-pets .
       - docker save paws-pets | gzip > paws-pets.tar.gz
-      - docker tag paws-pets-joao-braga:latest public.ecr.aws/i2c7a5l2/paws-pets-joao-braga:latest
+      - docker tag paws-pets:latest public.ecr.aws/i2c7a5l2/paws-pets:latest
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push public.ecr.aws/i2c7a5l2/paws-pets-joao-braga:latest
+      - docker push public.ecr.aws/i2c7a5l2/paws-pets:latest
 artifacts:
   files:
     - 'target/*.jar'
