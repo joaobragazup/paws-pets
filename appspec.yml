@@ -6,17 +6,17 @@ files:
 hooks:
   ApplicationStop:
     - location: scripts/stop_container.sh
-      timeout: 20
-      runas: ec2-user
+      timeout: 180
+      runas: root
   AfterInstall:
     - location: scripts/load_image.sh
-      timeout: 10
-      runas: ec2-user
+      timeout: 180
+      runas: root
   ApplicationStart:
     - location: scripts/start_container.sh.sh
-      timeout: 10
-      runas: ec2-user
+      timeout: 3600
+      runas: root
   ValidateService:
     - location: scripts/check_container.sh
-      timeout: 10
-      runas: ec2-user
+      timeout: 3600
+      runas: root
