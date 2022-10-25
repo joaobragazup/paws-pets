@@ -2,4 +2,4 @@
 
 set -e
 
-docker rm -f hello-app || true
+docker rm -f paws-pets || true
