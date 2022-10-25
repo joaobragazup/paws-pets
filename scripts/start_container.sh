@@ -2,4 +2,4 @@
 
 set -e
 
-docker run -d --name paws-pets -p 8080:8080 hello-app
+docker run -d --name paws-pets -p 8080:8080 paws-pets
